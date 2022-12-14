@@ -1,0 +1,32 @@
+server:
+  port: 8098
+
+spring:
+  application:
+    name: study-demo
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 8MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: zoro
+    password: mysql@ZORO
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 30
+      max-lifetime: 1800000
+      idle-timeout: 30000
+      minimum-idle: 0
+    type: com.zaxxer.hikari.HikariDataSource
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
