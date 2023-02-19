@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Slf4j
-public class SecondProcessTest implements BeanPostProcessor, InitializingBean, BeanNameAware, BeanFactoryAware{
+public class SecondProcessTest implements BeanPostProcessor, InitializingBean, BeanNameAware, BeanFactoryAware {
 
 
     private int beforeCount;

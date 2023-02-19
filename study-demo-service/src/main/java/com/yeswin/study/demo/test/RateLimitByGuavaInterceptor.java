@@ -17,7 +17,7 @@ public class RateLimitByGuavaInterceptor implements HandlerInterceptor {
 
     /**
      * 3k 个令牌桶每秒
-      */
+     */
     private RateLimiter rateLimiter = RateLimiter.create(3000);
 
     @Override

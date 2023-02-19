@@ -30,3 +30,11 @@ mybatis:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+
+yeswin:
+  es:
+    rest:
+      host: 127.0.0.1
+      port: 9200
+      username: elastic
+      password: 6EQV8Smysr-*Leo3WHlI

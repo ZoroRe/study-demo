@@ -3,8 +3,6 @@ package com.yeswin.study.demo.test;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.FutureTask;
-import java.util.function.Consumer;
 
 public class CompletableFutureTest {
 
@@ -14,7 +12,7 @@ public class CompletableFutureTest {
      * 同时类似 RxJava 有几种操作符， thenRun 、thenAccept、thenCombine、thenApply等
      */
     @Test
-    public void test(){
+    public void test() {
         CompletableFuture.runAsync(new Runnable() {
             @Override
             public void run() {
